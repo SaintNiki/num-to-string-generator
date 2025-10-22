@@ -74,6 +74,11 @@ form > .submit
     color: #0cad24;
 }
 
+form > .submit:hover
+{
+    cursor: pointer;
+}
+
 .link_wrapper > a
 {
     color: #0cad24;
