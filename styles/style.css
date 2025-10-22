@@ -1,0 +1,233 @@
+body
+{
+    background-color: #000000;
+    color: #0cad24;
+
+}
+
+.container
+{
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.int__input
+{
+    text-align: center;
+}
+
+.int__input > input 
+{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: #0cad24;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.select__language
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select__language > label
+{
+    margin-bottom: 10px;
+}
+
+.select__language > select
+{
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0cad24;
+}
+
+.select__language > select > option
+{
+    font-weight: bold;
+}
+
+form > .submit 
+{
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 200px;
+    width: 200px;
+    color: #0cad24;
+}
+
+.link_wrapper > a
+{
+    color: #0cad24;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.table__wrapper
+{
+    display: flex;
+    justify-content: center;
+}
+
+table
+{
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+thead th
+{
+    border: 2px solid #0cad24;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tbody td
+{
+    border: 1px solid #0cad24;
+    padding: 8px 8px;
+    vertical-align: top;
+}
+
+tbody td ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+tbody td ul li > p
+{
+    display: inline-block;
+}
+
+code 
+{
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.examples
+{
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.notes
+{
+    padding: 20px 0 20px 0;
+}
+
+.notes > ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media(max-width: 890px)
+{
+    .examples
+    {
+        flex-direction: column;
+
+    }
+
+    .examples > .request, .examples > .answer
+    {
+        width: 100%;
+
+    }
+
+    table 
+    {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 570px)
+{
+    h1 
+    {
+        font-size: 28px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    p
+    {
+        font-size: 14px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none; 
+    }
+
+    tbody tr {
+        border: 1px solid #0cad24;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+
+    tbody td {
+        border: none;
+        padding: 6px 0;
+        position: relative;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    /* tbody td::before {
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #0cad24;
+    } */
+
+    .container
+    {
+        padding: 10px;
+    }
+}
