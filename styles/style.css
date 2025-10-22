@@ -193,6 +193,11 @@ code
         width: 100%;
     }
 
+    .int__input > input 
+    {
+        max-width: 320px;
+    }
+
     h1 
     {
         font-size: 25px;
