@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title></title>
+    <title>Num to string</title>
     <link rel="stylesheet" href="styles/style.css">
   </head>
 
@@ -65,7 +65,7 @@ if(!empty($_POST))
 <body>
 <div class="container">
 <form action="" method="POST">
-    <div class="form__text"><?php echo !empty($_POST) && empty($error) ? $notice : $error ;?></div>
+    <div class="form__text"><?php echo !empty($_POST) && !empty($error) ? $error : $notice ;?></div>
     <div class="int__input">
         <input type="text" name="num" value="<?php echo !empty($_POST['num']) ? $_POST['num'] : '' ;?>">
     </div>
